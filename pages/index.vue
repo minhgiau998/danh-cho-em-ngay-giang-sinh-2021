@@ -1,7 +1,13 @@
 <template>
-  <Tutorial/>
+  <app-header></app-header>
 </template>
 
 <script>
-export default {}
+import AppHeader from '../components/shared/AppHeader.vue'
+
+export default {
+  components: {
+    AppHeader,
+  },
+}
 </script>
