@@ -17,8 +17,6 @@ export default {
   data() {
     return {
       show: false,
-      label: 'Loading...',
-      overlay: true,
       timeOut: 2000,
     }
   },
