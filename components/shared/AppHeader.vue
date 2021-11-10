@@ -7,8 +7,7 @@
         <p>CHRISTMAS</p>
       </div>
       <div class="absolute left-10 bottom-10">
-        <p>test</p>
-        <p>test</p>
+        <p>FEEL IT</p>
       </div>
     </div>
     <div
@@ -17,11 +16,10 @@
     ></div>
     <div class="text-3xl font-bold text-gray-300">
       <div class="absolute right-10 top-10">
-        <p>24</p>
+        <p>0000000</p>
       </div>
       <div class="absolute right-10 bottom-10">
-        <p>test</p>
-        <p>test</p>
+        <p>RICH</p>
       </div>
     </div>
   </header>
