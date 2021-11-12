@@ -33,7 +33,16 @@
     </swiper>
     <div class="text-3xl font-bold text-gray-300">
       <div class="absolute right-10 top-10">
-        <p>0000000</p>
+        <countdown :end-time="nextDay(this.date)">
+          <!-- eslint-disable -->
+          <span slot="process" slot-scope="{ timeObj }">
+            <p>{{ `Days: ${timeObj.d}` }}</p>
+            <p>{{ `Hours: ${timeObj.h}` }}</p>
+            <p>{{ `Minutes: ${timeObj.m}` }}</p>
+            <p>{{ `Seconds: ${timeObj.s}` }}</p>
+          </span>
+          <span slot="finish">Done!</span>
+        </countdown>
       </div>
       <div class="absolute right-10 bottom-10">
         <p>RICH</p>
@@ -84,6 +93,7 @@ export default {
         'holiday-card-11.png',
         'holiday-card-12.png',
       ],
+      date: 'Dec 25, 2021 00:00:00',
     }
   },
   computed: {
@@ -94,6 +104,11 @@ export default {
   mounted() {
     console.log('Current Swiper instance object', this.swiper)
     this.swiper.slideTo(3, 1000, false)
+  },
+  methods: {
+    nextDay(date) {
+      return new Date(date).getTime()
+    },
   },
 }
 </script>

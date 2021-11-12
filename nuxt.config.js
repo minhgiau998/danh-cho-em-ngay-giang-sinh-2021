@@ -27,7 +27,12 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [
+    // https://www.npmjs.com/package/vue-awesome-swiper
+    { src: '~/plugins/vue-awesome-swiper.js' },
+    // https://www.npmjs.com/package/vue-awesome-countdown
+    { src: '~/plugins/vue-awesome-countdown.js' },
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
